@@ -30,5 +30,6 @@ ro.vendor.audio.zoom.support=true
 ro.vendor.audio.zoom.type=1
 
 # Display
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2

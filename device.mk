@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Two-pane layout
 PRODUCT_PACKAGES += \
     androidx.window.extensions

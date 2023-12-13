@@ -41,14 +41,14 @@ public class PenUtils {
 
     public static void enablePenMode() {
         Log.d(TAG, "enablePenMode: Enable Pen Mode");
-        SystemProperties.set("persist.vendor.parts.pen", "18");
+        TfWrapper.setTouchFeature(new TfWrapper.TfParams(20, 18));
         Log.d(TAG, "enablePenMode: Setting Refresh Rates for Pen");
         mRefreshUtils.setPenRefreshRate();
     }
 
     public static void disablePenMode() {
         Log.d(TAG, "disablePenMode: Disable Pen Mode");
-        SystemProperties.set("persist.vendor.parts.pen", "2");
+        TfWrapper.setTouchFeature(new TfWrapper.TfParams(20, 2));
         Log.d(TAG, "disablePenMode: Resetting Refresh Rate Values");
         mRefreshUtils.setDefaultRefreshRate();
     }

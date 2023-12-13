@@ -27,6 +27,3 @@ service xiaomi-keyboard /vendor/bin/xiaomi-keyboard
     group system input
     oneshot
     disabled
-
-on property:persist.vendor.parts.pen=*
-    start xiaomi-pen

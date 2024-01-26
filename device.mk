@@ -70,3 +70,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/pipa/pipa-vendor.mk)
+
+# Inherit Gapps and Pixel stuff
+$(call inherit-product, vendor/google/gms/config.mk)

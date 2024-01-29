@@ -29,22 +29,28 @@ public class PenUtils {
     private static final String STYLUS_KEY = "stylus_switch_key";
 
     private static SharedPreferences preferences;
+    private static RefreshUtils mRefreshUtils;
 
     public static void setup(Context context) {
         mInputManager = (InputManager) context.getSystemService(Context.INPUT_SERVICE);
         mInputManager.registerInputDeviceListener(mInputDeviceListener, null);
         preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        mRefreshUtils = new RefreshUtils(context);
         refreshPenMode();
     }
 
     public static void enablePenMode() {
         Log.d(TAG, "enablePenMode: Enable Pen Mode");
         SystemProperties.set("persist.vendor.parts.pen", "18");
+        Log.d(TAG, "enablePenMode: Setting Refresh Rates for Pen");
+        mRefreshUtils.setPenRefreshRate();
     }
 
     public static void disablePenMode() {
         Log.d(TAG, "disablePenMode: Disable Pen Mode");
         SystemProperties.set("persist.vendor.parts.pen", "2");
+        Log.d(TAG, "disablePenMode: Resetting Refresh Rate Values");
+        mRefreshUtils.setDefaultRefreshRate();
     }
 
     private static void refreshPenMode() {

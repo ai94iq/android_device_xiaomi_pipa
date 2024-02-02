@@ -72,4 +72,6 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, vendor/xiaomi/pipa/pipa-vendor.mk)
 
 # Inherit Gapps and Pixel stuff
+ifneq ("$(wildcard vendor/google/gms/config.mk)", "")
 $(call inherit-product, vendor/google/gms/config.mk)
+endif

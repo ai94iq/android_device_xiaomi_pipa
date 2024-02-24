@@ -17,4 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether sim related information is visible to the end user. -->
     <bool name="config_show_sim_info">false</bool>
+    <!-- Whether to show emergency gesture in Settings -->
+    <bool name="config_show_emergency_gesture_settings">false</bool>
+
 </resources>

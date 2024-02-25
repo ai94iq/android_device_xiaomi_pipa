@@ -18,7 +18,7 @@ android_app {
     overrides: ["MusicFX"],
     static_libs: [
         "androidx.core_core",
-        "co.aospa.resources",
+        "org.lineageos.settings.resources",
         "SettingsLib",
     ],
 }

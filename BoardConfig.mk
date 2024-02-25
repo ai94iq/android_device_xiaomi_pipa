@@ -19,7 +19,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := device/xiaomi/pipa/prebuilts/
 BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/pipa/prebuilts/dtbo.img
 BOARD_USES_DT := true
-BOARD_DTBOIMG_PARTITION_SIZE := 2097152
 
 # Kernel and module handling
 TARGET_PREBUILT_KERNEL := device/xiaomi/pipa/prebuilts/Image

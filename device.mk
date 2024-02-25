@@ -348,6 +348,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
 
+# Platform
+BOARD_VENDOR := xiaomi
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := kona
+TARGET_USES_HARDWARE_QCOM_WLAN := true
+
+# Kernel
+TARGET_KERNEL_VERSION ?= 4.19
+TARGET_KERNEL_DIR ?= device/xiaomi/pipa/prebuilts/
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \

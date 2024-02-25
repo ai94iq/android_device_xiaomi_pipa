@@ -68,6 +68,10 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBIMAGE_DIR := device/xiaomi/pipa/prebuilts/
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/pipa/prebuilts/dtbo.img
+BOARD_USES_DT := true
 
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x546C00000000
@@ -116,9 +120,10 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 
-KERNEL_DEFCONFIG := vendor/pipa_user_defconfig
+TARGET_PREBUILT_KERNEL := device/xiaomi/pipa/prebuilts/Image
+KERNEL_MODULE_DIR := device/xiaomi/pipa/prebuilts
+KERNEL_MODULES := $(wildcard $(KERNEL_MODULE_DIR)/*.ko)
 
-KERNEL_FULL_LLVM := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true

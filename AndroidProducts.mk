@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/statix_pipa.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_pipa-user 	 \
-	statix_pipa-userdeubg  \
-	statix_pipa-eng
+    statix_pipa-user \
+    statix_pipa-userdebug \
+    statix_pipa-eng

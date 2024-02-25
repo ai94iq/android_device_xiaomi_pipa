@@ -9,6 +9,12 @@ TARGET_IS_VAB := true
 
 PRODUCT_IS_TABLET := true
 
+# Platform
+BOARD_VENDOR := xiaomi
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := kona
+TARGET_USES_HARDWARE_QCOM_WLAN := true
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
@@ -30,6 +36,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libpiex_shim
+
+# Kernel
+TARGET_KERNEL_VERSION ?= 4.19
+TARGET_KERNEL_DIR ?= device/xiaomi/pipa/prebuilts/
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
 
 # Keyboard
 PRODUCT_COPY_FILES += \

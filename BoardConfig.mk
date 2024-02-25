@@ -14,8 +14,19 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 400
 
-# Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/pipa.config
+# DTB
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBIMAGE_DIR := device/xiaomi/pipa/prebuilts/
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/pipa/prebuilts/dtbo.img
+BOARD_USES_DT := true
+BOARD_DTBOIMG_PARTITION_SIZE := 2097152
+
+# Kernel and module handling
+TARGET_PREBUILT_KERNEL := device/xiaomi/pipa/prebuilts/Image
+
+BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
+KERNEL_MODULE_DIR := device/xiaomi/pipa/prebuilts
+KERNEL_MODULES := $(wildcard $(KERNEL_MODULE_DIR)/*.ko)
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

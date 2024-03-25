@@ -15,6 +15,7 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_SCREEN_DENSITY := 400
 
 # DTB
+TARGET_NO_KERNEL := false
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := device/xiaomi/pipa/prebuilts/
 BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/pipa/prebuilts/dtbo.img

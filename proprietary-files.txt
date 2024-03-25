@@ -450,3 +450,6 @@ vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermald-devices.conf
+
+# WiFi Display
+vendor/lib/libwfdaac_vendor.so

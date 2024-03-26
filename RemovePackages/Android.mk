@@ -8,7 +8,7 @@ LOCAL_OVERRIDES_PACKAGES := \
    CarrierServices \
    Contacts \
    Dialer \
-   GoogleDialer \
+   NfcNci \
    Stk \
    Etar \
    TeleService \
@@ -17,7 +17,31 @@ LOCAL_OVERRIDES_PACKAGES := \
    TelephonyProvider \
    com.google.android.dialer.support \
    com.android.phone.common \
-   messaging
+   messaging \
+   TagGoogle \
+   CalculatorGooglePrebuilt \
+   CalendarGooglePrebuilt \
+   DevicePolicyPrebuilt \
+   GoogleContacts \
+   LocationHistoryPrebuilt \
+   Maps \
+   MeetPrebuilt \
+   PrebuiltDeskClockGoogle \
+   PrebuiltGmail \
+   Photos \
+   SoundAmplifierPrebuilt \
+   SwitchAccessPrebuilt \
+   YouTube \
+   arcore \
+   talkback \
+   AndroidAutoStubPrebuilt \
+   FilesPrebuilt \
+   GoogleDialer \
+   HelpRtcPrebuilt \
+   PixelSupportPrebuilt \
+   PrebuiltBugle \
+   RecorderPrebuilt \
+   SafetyHubPrebuilt
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED

@@ -23,6 +23,7 @@ LOCAL_OVERRIDES_PACKAGES := \
    CalendarGooglePrebuilt \
    DevicePolicyPrebuilt \
    GoogleContacts \
+   GoogleTTS \
    LocationHistoryPrebuilt \
    Maps \
    MeetPrebuilt \
@@ -35,13 +36,16 @@ LOCAL_OVERRIDES_PACKAGES := \
    arcore \
    talkback \
    AndroidAutoStubPrebuilt \
+   DevicePersonalizationPrebuiltPixel2020 \
    FilesPrebuilt \
    GoogleDialer \
    HelpRtcPrebuilt \
    PixelSupportPrebuilt \
    PrebuiltBugle \
    RecorderPrebuilt \
-   SafetyHubPrebuilt
+   SafetyHubPrebuilt \
+   ScribePrebuilt \
+   Velvet
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED

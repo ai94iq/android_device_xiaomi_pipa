@@ -57,5 +57,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     TargetWifiOverlay
 
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal-india-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/thermal-india-mgame.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-india-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/thermal-india-tgame.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/thermal-mgame.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/thermal-tgame.conf
+
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/pipa/pipa-vendor.mk)

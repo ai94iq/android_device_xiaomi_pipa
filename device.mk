@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := kona
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+     RemovePackages
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.device.rc

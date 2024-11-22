@@ -171,6 +171,12 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
+vendor/lib64/libvidhance_active_ois.so
+vendor/lib64/libvidhance_face_stabilizer.so
+vendor/lib64/libvidhance_horizon_correction.so
+vendor/lib64/libvidhance_ldc.so
+vendor/lib64/libvidhance_stabilizer.so
+vendor/lib64/libvidhance_super_stabilization.so
 vendor/lib64/libxml2_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 

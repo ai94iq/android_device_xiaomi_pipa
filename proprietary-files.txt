@@ -292,6 +292,10 @@ vendor/etc/init/init.batterysecret.rc
 vendor/etc/qdcm_calib_data_xiaomi_m82_36_02_0a_video_mode_dual_dsi_dphy_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_m82_42_02_0b_video_mode_dual_dsi_dphy_panel.xml
 
+# Display config
+product/etc/displayconfig/display_id_4630946808805831297.xml:vendor/etc/displayconfig/display_id_4630946808805831297.xml
+product/etc/displayconfig/display_id_4630946922172900481.xml:vendor/etc/displayconfig/display_id_4630946922172900481.xml
+
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk;PRESIGNED

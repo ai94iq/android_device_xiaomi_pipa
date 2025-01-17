@@ -135,7 +135,7 @@ vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libmi_supernight_raw.so
-vendor/lib64/libmiai_portraitsupernight.so
+vendor/lib64/libmiai_portraitsupernight.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_ie_capture.so
 vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_sd.so

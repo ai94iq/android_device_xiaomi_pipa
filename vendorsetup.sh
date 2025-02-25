@@ -20,6 +20,7 @@ clone_if_missing "https://github.com/ai94iq/android_kernel_xiaomi_sm8250" "vic" 
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_sm8250-common" "vic" "vendor/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_pipa" "vic" "vendor/xiaomi/pipa"
 clone_if_missing "https://github.com/ai94iq/android_hardware_xiaomi" "vic" "hardware/xiaomi"
+clone_if_missing "https://github.com/TogoFire/packages_apps_ViPER4AndroidFX" "vic" "packages/apps/ViPER4AndroidFX"
 
 # Apply atomic-recovery patch
 (

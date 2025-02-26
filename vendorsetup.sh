@@ -15,12 +15,12 @@ clone_if_missing() {
 }
 
 # Git clones
-clone_if_missing "https://github.com/ai94iq/android_device_xiaomi_sm8250-common" "vic" "device/xiaomi/sm8250-common"
-clone_if_missing "https://github.com/ai94iq/android_kernel_xiaomi_sm8250" "vic" "kernel/xiaomi/sm8250"
+clone_if_missing "https://github.com/ai94iq/android_device_xiaomi_sm8250-common" "lmov" "device/xiaomi/sm8250-common"
+clone_if_missing "https://github.com/ai94iq/android_kernel_xiaomi_sm8250" "axksu" "kernel/xiaomi/sm8250"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_sm8250-common" "vic" "vendor/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_pipa" "vic" "vendor/xiaomi/pipa"
-clone_if_missing "https://github.com/ai94iq/android_hardware_xiaomi" "vic" "hardware/xiaomi"
-clone_if_missing "https://github.com/TogoFire/packages_apps_ViPER4AndroidFX" "vic" "packages/apps/ViPER4AndroidFX"
+clone_if_missing "https://github.com/LineageOS/android_hardware_xiaomi" "lineage-22.1" "hardware/xiaomi"
+clone_if_missing "https://github.com/TogoFire/packages_apps_ViPER4AndroidFX" "v4a" "packages/apps/ViPER4AndroidFX"
 
 # Apply atomic-recovery patch
 (

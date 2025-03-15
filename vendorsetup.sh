@@ -19,7 +19,8 @@ clone_if_missing "https://github.com/ai94iq/android_device_xiaomi_sm8250-common"
 clone_if_missing "https://github.com/ai94iq/android_kernel_xiaomi_sm8250" "axksu" "kernel/xiaomi/sm8250"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_sm8250-common" "vic" "vendor/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_pipa" "vic" "vendor/xiaomi/pipa"
-clone_if_missing "https://github.com/ai94iq/cr-android_hardware_xiaomi" "15.0" "hardware/xiaomi"
+clone_if_missing "https://github.com/LineageOS/android_hardware_xiaomi" "lineage-22.1" "hardware/xiaomi"
+clone_if_missing "https://github.com/ai94iq/android_packages_apps_XiaomiDolby" "axv" "packages/apps/XiaomiDolby"
 
 # Apply atomic-recovery patch
 (

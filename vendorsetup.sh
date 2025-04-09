@@ -15,7 +15,7 @@ clone_if_missing() {
 
 # Git clones
 echo "Setting up repositories..."
-clone_if_missing "https://github.com/ai94iq/android_device_xiaomi_sm8250-common" "axv-qpr2" "device/xiaomi/sm8250-common"
+clone_if_missing "https://github.com/ai94iq/android_device_xiaomi_sm8250-common" "pixelage" "device/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/ai94iq/android_kernel_xiaomi_sm8250" "axksu" "kernel/xiaomi/sm8250"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_sm8250-common" "axv-qpr2" "vendor/xiaomi/sm8250-common"
 clone_if_missing "https://github.com/ai94iq/proprietary_vendor_xiaomi_pipa" "axv-qpr2" "vendor/xiaomi/pipa"
